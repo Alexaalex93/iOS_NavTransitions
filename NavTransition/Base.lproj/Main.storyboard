@@ -1,11 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="UQj-cW-huv">
-    <device id="retina4_7" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="UQj-cW-huv">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -24,7 +21,6 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="4du-TG-CTB">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="IAR-lv-Jb0">
                                     <size key="itemSize" width="100" height="130"/>
@@ -40,11 +36,8 @@
                                             <rect key="frame" x="0.0" y="0.0" width="100" height="130"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="sCp-9G-gVw">
-                                                    <rect key="frame" x="5" y="8" width="90" height="93"/>
-                                                </imageView>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="sCp-9G-gVw"/>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="gAr-07-bVs">
-                                                    <rect key="frame" x="8" y="104" width="84" height="18"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="21" id="zAj-Mn-dtH"/>
                                                     </constraints>
@@ -71,6 +64,7 @@
                                         <connections>
                                             <outlet property="thumbnailImageView" destination="sCp-9G-gVw" id="vE8-WZ-4m1"/>
                                             <outlet property="titleLabel" destination="gAr-07-bVs" id="B6y-b2-ooA"/>
+                                            <segue destination="rSp-kO-9Um" kind="presentation" id="lGl-n2-Hax"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
@@ -109,7 +103,6 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="img-3" translatesAutoresizingMaskIntoConstraints="NO" id="9vK-2v-G7l">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="300"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="600" id="yPo-AO-QNq"/>
                                 </constraints>
@@ -120,19 +113,17 @@
                                 </variation>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Master iOS App Programming" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.69999998807907104" translatesAutoresizingMaskIntoConstraints="NO" id="wna-2Q-S5e">
-                                <rect key="frame" x="26" y="308" width="323" height="24"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Learn how to build a real app from scratch to App Store" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.69999998807907104" translatesAutoresizingMaskIntoConstraints="NO" id="XvD-T8-ffy">
-                                <rect key="frame" x="41" y="335" width="293" height="17"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-UltraLight" family="Avenir Next" pointSize="12"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KRn-IY-nf5">
-                                <rect key="frame" x="16" y="20" width="18" height="18"/>
+                                <frame key="frameInset" minX="16" minY="20" width="18" height="18"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" image="cross37">
@@ -143,8 +134,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MJk-ES-gTe">
-                                <rect key="frame" x="16" y="354" width="343" height="249"/>
-                                <mutableString key="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed erat dui, scelerisque lacinia libero finibus, volutpat tristique magna. Etiam pellentesque pretium enim vitae ullamcorper. Suspendisse ut massa at orci congue iaculis. Vestibulum accumsan posuere est, et pellentesque risus laoreet id. Integer rutrum lorem tempus, lobortis erat non, tincidunt purus. Nunc eu dolor eu ante tempus pretium vitae id felis. Curabitur vel venenatis metus. Duis a iaculis turpis. Nam lacus leo, maximus id nunc vel, rutrum pretium enim. Ut hendrerit, urna nec egestas gravida, purus ligula elementum ex, nec luctus neque massa euismod eros. Fusce quis turpis dui.</mutableString>
+                                <string key="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed erat dui, scelerisque lacinia libero finibus, volutpat tristique magna. Etiam pellentesque pretium enim vitae ullamcorper. Suspendisse ut massa at orci congue iaculis. Vestibulum accumsan posuere est, et pellentesque risus laoreet id. Integer rutrum lorem tempus, lobortis erat non, tincidunt purus. Nunc eu dolor eu ante tempus pretium vitae id felis. Curabitur vel venenatis metus. Duis a iaculis turpis. Nam lacus leo, maximus id nunc vel, rutrum pretium enim. Ut hendrerit, urna nec egestas gravida, purus ligula elementum ex, nec luctus neque massa euismod eros. Fusce quis turpis dui.</string>
                                 <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="14"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>

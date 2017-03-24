@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		09F46A581E85244C005D18D4 /* SlideDownTransitionAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F46A571E85244C005D18D4 /* SlideDownTransitionAnimation.swift */; };
 		F412073D1DC0B39D00CF8039 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F412073C1DC0B39D00CF8039 /* AppDelegate.swift */; };
 		F41207421DC0B39D00CF8039 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F41207401DC0B39D00CF8039 /* Main.storyboard */; };
 		F41207441DC0B39D00CF8039 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F41207431DC0B39D00CF8039 /* Assets.xcassets */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		09F46A571E85244C005D18D4 /* SlideDownTransitionAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlideDownTransitionAnimation.swift; sourceTree = "<group>"; };
 		F41207391DC0B39D00CF8039 /* NavTransition.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NavTransition.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F412073C1DC0B39D00CF8039 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F41207411DC0B39D00CF8039 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -66,6 +68,7 @@
 				F412074E1DC0B8A600CF8039 /* MenuViewController.swift */,
 				F41207501DC0B90400CF8039 /* MenuCell.swift */,
 				F42D61421DC0BD670096F13D /* DetailViewController.swift */,
+				09F46A571E85244C005D18D4 /* SlideDownTransitionAnimation.swift */,
 			);
 			path = NavTransition;
 			sourceTree = "<group>";
@@ -142,6 +145,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				09F46A581E85244C005D18D4 /* SlideDownTransitionAnimation.swift in Sources */,
 				F412073D1DC0B39D00CF8039 /* AppDelegate.swift in Sources */,
 				F412074F1DC0B8A600CF8039 /* MenuViewController.swift in Sources */,
 				F41207511DC0B90400CF8039 /* MenuCell.swift in Sources */,
@@ -269,6 +273,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = NavTransition/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.355berrystreet.NavTransition;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -281,6 +286,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = NavTransition/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.355berrystreet.NavTransition;
 				PRODUCT_NAME = "$(TARGET_NAME)";

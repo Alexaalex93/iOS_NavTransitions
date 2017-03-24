@@ -14,6 +14,8 @@ class MenuViewController: UIViewController, UICollectionViewDataSource, UICollec
     var transitionImages = ["Doodle Icons-41", "Doodle Icons-42", "Doodle Icons-43", "Doodle Icons-44"]
     var transitions = ["Slide Down", "Slide Right", "Pop", "Rotate"]
     
+    let slideDownTransition = SlideDownTransitionAnimator()
+    
     @IBOutlet var collectionView:UICollectionView!
     
     override func viewDidLoad() {
@@ -50,6 +52,21 @@ class MenuViewController: UIViewController, UICollectionViewDataSource, UICollec
         let height = (traitCollection.horizontalSizeClass == .compact && traitCollection.verticalSizeClass == .regular) ? 105.0: 130.0
         
         return CGSize(width: width, height: height)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let toViewController = segue.destination
+        let sourceViewController = segue.source as! MenuViewController
+        
+        if let selectedIndexPath = sourceViewController.collectionView.indexPathsForSelectedItems{
+            switch selectedIndexPath[0].row {
+            case 0:
+                toViewController.transitioningDelegate = slideDownTransition
+            default:
+                break
+            }
+        
+        }
     }
     
     
