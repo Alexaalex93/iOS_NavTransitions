@@ -21,7 +21,7 @@ class SlideDownTransitionAnimator: NSObject, UIViewControllerAnimatedTransitioni
     }
     
     func animationController(forDismissed dismissed: UIViewController) -> UIViewControllerAnimatedTransitioning? {
-        isPresenting = true
+        isPresenting = false
         return self
     }
     
@@ -61,17 +61,11 @@ class SlideDownTransitionAnimator: NSObject, UIViewControllerAnimatedTransitioni
             
             
             if self.isPresenting {
-            
                 fromView.transform = offScreenDown
-
                 
             } else {
                 fromView.transform = offScreenUp
             }
-            
-        
-
-            
             }) { (finished) in
                 transitionContext.completeTransition(true)
         }

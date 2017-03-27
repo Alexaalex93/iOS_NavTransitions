@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0937CC4A1E88F345006DE191 /* SlideRightTransitionAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0937CC491E88F345006DE191 /* SlideRightTransitionAnimator.swift */; };
+		096449B11E88F90700DDDCD3 /* PopTransitionAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 096449B01E88F90700DDDCD3 /* PopTransitionAnimator.swift */; };
+		096449B31E88FF3500DDDCD3 /* RotateAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 096449B21E88FF3500DDDCD3 /* RotateAnimator.swift */; };
 		09F46A581E85244C005D18D4 /* SlideDownTransitionAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F46A571E85244C005D18D4 /* SlideDownTransitionAnimation.swift */; };
 		F412073D1DC0B39D00CF8039 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F412073C1DC0B39D00CF8039 /* AppDelegate.swift */; };
 		F41207421DC0B39D00CF8039 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F41207401DC0B39D00CF8039 /* Main.storyboard */; };
@@ -18,6 +21,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0937CC491E88F345006DE191 /* SlideRightTransitionAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlideRightTransitionAnimator.swift; sourceTree = "<group>"; };
+		096449B01E88F90700DDDCD3 /* PopTransitionAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopTransitionAnimator.swift; sourceTree = "<group>"; };
+		096449B21E88FF3500DDDCD3 /* RotateAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RotateAnimator.swift; sourceTree = "<group>"; };
 		09F46A571E85244C005D18D4 /* SlideDownTransitionAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlideDownTransitionAnimation.swift; sourceTree = "<group>"; };
 		F41207391DC0B39D00CF8039 /* NavTransition.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NavTransition.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F412073C1DC0B39D00CF8039 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -69,6 +75,9 @@
 				F41207501DC0B90400CF8039 /* MenuCell.swift */,
 				F42D61421DC0BD670096F13D /* DetailViewController.swift */,
 				09F46A571E85244C005D18D4 /* SlideDownTransitionAnimation.swift */,
+				0937CC491E88F345006DE191 /* SlideRightTransitionAnimator.swift */,
+				096449B01E88F90700DDDCD3 /* PopTransitionAnimator.swift */,
+				096449B21E88FF3500DDDCD3 /* RotateAnimator.swift */,
 			);
 			path = NavTransition;
 			sourceTree = "<group>";
@@ -145,11 +154,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0937CC4A1E88F345006DE191 /* SlideRightTransitionAnimator.swift in Sources */,
+				096449B31E88FF3500DDDCD3 /* RotateAnimator.swift in Sources */,
 				09F46A581E85244C005D18D4 /* SlideDownTransitionAnimation.swift in Sources */,
 				F412073D1DC0B39D00CF8039 /* AppDelegate.swift in Sources */,
 				F412074F1DC0B8A600CF8039 /* MenuViewController.swift in Sources */,
 				F41207511DC0B90400CF8039 /* MenuCell.swift in Sources */,
 				F42D61431DC0BD670096F13D /* DetailViewController.swift in Sources */,
+				096449B11E88F90700DDDCD3 /* PopTransitionAnimator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
